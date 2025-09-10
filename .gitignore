@@ -350,14 +350,6 @@ nbdist/
 .history
 .ionide
 
-### Wintersmith ###
-contents/
-node_modules/
-plugins/
-templates/
-config.json
-package.json
-
 ### dotenv ###
 .env
 
