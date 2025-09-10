@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: ${APP_NAME:sqlite}
+  
+  datasource:
+    driver-class-name: ${DB_DRIVER:org.sqlite.JDBC}
+    url: ${DB_URL:jdbc:sqlite:src/main/resources/data/database.db}
+    username: ${DB_USERNAME:}
+    password: ${DB_PASSWORD:}
+  
+  jpa:
+    database-platform: ${JPA_DIALECT:org.hibernate.community.dialect.SQLiteDialect}
+    hibernate:
+      ddl-auto: ${HIBERNATE_DDL_AUTO:create-drop}
+    show-sql: ${JPA_SHOW_SQL:true}
+    properties:
+      hibernate:
+        format_sql: ${HIBERNATE_FORMAT_SQL:true}
+  
+  sql:
+    init:
+      mode: ${SQL_INIT_MODE:always}
