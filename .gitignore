@@ -350,8 +350,14 @@ nbdist/
 .history
 .ionide
 
-### dotenv ###
+# Arquivos de ambiente (manter apenas .env.example)
 .env
+.env.local
+.env.development
+.env.production
 
+# Banco de dados SQLite
+src/main/resources/data/*.db
+*.db
 
 # End of https://www.toptal.com/developers/gitignore/api/java,eclipse,netbeans,intellij,intellij+all,intellij+iml,wintersmith,visualstudiocode
